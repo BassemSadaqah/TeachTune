@@ -9,9 +9,11 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from './firebase';
 import Loading from './pages/Loading';
 import ProtectedRoute from './components/ProtectedRoute';
+import { userContext } from './userContext';
 
 
 function App() {
+  
   const [user, setUser] = useState(null);
   // const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -40,16 +42,19 @@ function App() {
   return (
     <>
     {user===null?
-    <Loading/>:<BrowserRouter>
+    <Loading/>:
+    <userContext.Provider value={user}>
+    <BrowserRouter>
       <Routes>
         <Route path="/">
-          <Route index element={<ProtectedRoute user={user}><Home user={user} /></ProtectedRoute>} />
+          <Route index element={<ProtectedRoute ><Home /></ProtectedRoute>} />
           <Route path="login" element={<Signin user={user}/>} />
           <Route path="register" element={<Signup user={user} />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </BrowserRouter>}
+    </BrowserRouter>
+    </userContext.Provider>}
     </>
 
   );

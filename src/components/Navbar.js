@@ -6,7 +6,7 @@ import { MenuOutlined } from "@ant-design/icons";
 import { useLocation } from "react-router-dom";
 import './styles/Navbar.css'
 
-const Navbar = ({user}) => {
+const Navbar = () => {
     const [visible, setVisible] = useState(false);
     const showDrawer = () => {
         setVisible(!visible);
@@ -36,7 +36,7 @@ const Navbar = ({user}) => {
                             <MenuOutlined />
                         </Button>
                         <div className="rightMenu">
-                            <RightMenu user={user} mode={"horizontal"} />
+                            <RightMenu mode={"horizontal"} />
                         </div>
                         <Drawer
                             title={"The Unknown Project"}
@@ -47,7 +47,7 @@ const Navbar = ({user}) => {
                             style={{ zIndex: 99999 }}
                         >
                             <LeftMenu mode={"inline"} />
-                            <RightMenu user={user} mode={"inline"} />
+                            <RightMenu mode={"inline"} />
                         </Drawer>
                     </div>
                 </Layout.Header>

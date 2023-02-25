@@ -1,0 +1,8 @@
+.classes-container{
+    display: flex;
+    margin:30px 70px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    gap: 40px;
+}
