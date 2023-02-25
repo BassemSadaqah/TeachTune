@@ -1,0 +1,23 @@
+.login-form{
+    max-width: 380px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 330px;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1); 
+}
+.login-form .ant-checkbox-wrapper{
+    float: left;
+}
+.login-form-forgot {
+    float: right;
+}
+/* 
+.ant-col-rtl .login-form-forgot {
+    float: left;
+} */
+
+.login-form-button {
+    width: 100%;
+}

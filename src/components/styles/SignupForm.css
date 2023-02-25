@@ -1,0 +1,26 @@
+.signup-form {
+    max-width: 380px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    margin-top: 300px;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form .ant-checkbox-wrapper {
+    float: left;
+}
+
+.signup-form-forgot {
+    float: right;
+}
+
+/* 
+.ant-col-rtl .signup-form-forgot {
+    float: left;
+} */
+
+.signup-form-button {
+    width: 100%;
+}
