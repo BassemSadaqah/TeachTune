@@ -30,7 +30,7 @@ function Class() {
   const handleCopySurveryLink = () => {
     successNotification('Link coped to clipboard!')
     console.log(state)
-    navigator.clipboard.writeText(`${document.location.protocol}://${document.location.host}/survey/${state.classId}`)
+    navigator.clipboard.writeText(`${document.location.protocol}//${document.location.host}/survey/${state.classId}`)
   }
   if (state == null) {
     document.location = '/'
