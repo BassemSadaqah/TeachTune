@@ -74,10 +74,16 @@ const ClassCard = ({ Rerender }) => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    cursor: 'pointer'
+                    cursor: 'pointer',
+                    borderColor:'#dbc8c8'
                 }}
             >
-                <PlusOutlined twoToneColor="#eb2f96" style={{ fontSize: '210px', color: 'rgb(169 194 194)' }} />
+                <div>
+                <PlusOutlined style={{display:'inline-block',marginRight:'10px'}} />
+                <h4 style={{ display: 'inline-block' }}>Add new Class</h4>
+
+                </div>
+                {/* <PlusOutlined twoToneColor="#eb2f96" style={{ fontSize: '210px', color: 'rgb(169 194 194)' }} /> */}
             </Card>
             <Modal
                 title="Create new Class"

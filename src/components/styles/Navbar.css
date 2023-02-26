@@ -53,6 +53,7 @@
 }
 
 .navbar-menu .leftMenu {
+    margin-left: -60px;
     float: left;
 }
 

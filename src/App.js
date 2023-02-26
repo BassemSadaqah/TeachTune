@@ -12,6 +12,9 @@ import ProtectedRoute from './components/ProtectedRoute';
 import { userContext } from './userContext';
 import Class from './pages/Class';
 import Survey from './pages/Survey';
+import VisualLearning from './pages/VisualLearning';
+import AuditoryLearning from './pages/AuditoryLearning';
+import KintethicLearning from './pages/KintethicLearning';
 
 
 function App() {
@@ -47,6 +50,9 @@ function App() {
           <Route path="login" element={<Signin user={user}/>} />
           <Route path="register" element={<Signup user={user} />} />
           <Route path="class" element={<Class />} />
+          <Route path="visual-learning" element={<VisualLearning />} />
+          <Route path="auditory-learning" element={<AuditoryLearning />} />
+          <Route path="kintethic-learning" element={<KintethicLearning />} />
           <Route path="survey/*" element={<Survey />} />
           <Route path="*" element={<NotFound />} />
         </Route>

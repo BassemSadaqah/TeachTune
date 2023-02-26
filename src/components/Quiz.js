@@ -10,27 +10,58 @@ import { SendOutlined } from '@ant-design/icons';
 function Quiz({classId}) {
     const [loading,setLoading]=useState(false)
     const [submitted,setSubmitted]=useState(false)
-    const allQuestions = [
-        {
-            question: 'What learning style would YOU say you have?',
-            options: ['Visual', 'Auditory', 'Kintethic'],
-            answers: [1, 2, 3],
-        },
-        {
-            question: 'What is the largest planet in our solar system?',
-            options: ['Mars', 'Venus', 'Jupiter'],
-            answers: [1, 2, 3],
-        },
-        {
-            question: 'What is the tallest mammal in the world?',
-            options: ['Elephant', 'Giraffe', 'Hippopotamus'],
-            answers: [1, 2, 3],
-        },
-        {
-            question: 'What is the smallest country in the world?',
-            options: ['Monaco', 'Vatican City', 'Maldives'],
-            answers: [1, 2, 3],
-        },]
+    const allQuestions = [{
+        "question": "1. What learning style would YOU say you have?",
+        "options": ["Visual", "Auditory", "Kintethic"],
+        "answers": [1, 2, 3]
+    },
+    {
+        "question": "2. Would you prefer to draw something, discuss something or make something?",
+        "options": ["Draw", "Discuss", "Make"],
+        "answers": [1, 2, 3]
+    },
+    {
+        "question": "3. I prefer to note information by...",
+        "options": ["Writing it", "Recording it", "Typing it"],
+        "answers": [1, 2, 3]
+    },
+    {
+        "question": "4. You're learning to sing a new song, but you don't know the music or the lyrics - how do you do it?",
+        "options": ["Write out the lyrics and read them to the music", "Listen to the music and imagine singing along", "Play the music and try singing along right from the start"],
+        "answers": [1, 2, 3]
+    },
+    {
+        "question": "5. I mostly remember...",
+        "options": ["The things I see", "The things I hear", "The things I do"],
+        "answers": [1, 2, 3]
+    },
+    {
+        "question": "6. When I am adding numbers, I verify my answer by:",
+        "options": ["Looking at the numbers to see if they are correct", ". Counting the numbers in my head or out loud", "Using my fingers to get a feeling if it is correct."],
+        "answers": [1, 2, 3]
+    },
+    {
+        "question": "7. I prefer to note information by...",
+        "options": ["Writing it", "Recording it", "Typing it"],
+        "answers": [1, 2, 3]
+    },
+    {
+        "question": "8. When learning a new game, I prefer to...",
+        "options": ["Watch a video of how to play", "Listen to someone who's played it tell me how to play", "Figure it out as I play"],
+        "answers": [1, 2, 3]
+    },
+    {
+        "question": "9. Before going to sleep at night, I appreciate:",
+        "options": ["The room is dark", "The room is quiet", "The bed feels comfortable"],
+        "answers": [1, 2, 3]
+    },
+    {
+        "question": "10. Would you prefer to draw something, discuss something or make something?",
+        "options": ["Draw", "Discuss", "Make"],
+        "answers": [1, 2, 3]
+    }
+
+    ]
     const handleFormSubmit = async (values) => {
         setLoading(true)
         let visual_count=0

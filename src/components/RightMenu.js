@@ -48,7 +48,7 @@ const RightMenu = ({ mode}) => {
         }]
     return (
         <>
-            <Menu mode={mode} items={items} />
+            <Menu disabledOverflow mode={mode} items={items} />
             {/* <Menu mode={mode}>
             <Menu.SubMenu
                 title={

@@ -10,6 +10,7 @@ import { async } from '@firebase/util';
 import { userContext } from '../userContext';
 import { render } from '@testing-library/react';
 import { Navigate } from 'react-router-dom';
+import Loading from './Loading';
 const Home = () => {
   const user=useContext(userContext)
   const [classes,setClasses]=useState(false)
@@ -26,9 +27,10 @@ const Home = () => {
     return querySnapshot
     }
     getClasses()
-    },[])
+    },[render])
   return (
-    <>
+    classes?
+   <>
     <Navbar />
     <div className='classes-container'>
       <AddClassCard Rerender={Rerender}/>
@@ -37,7 +39,7 @@ const Home = () => {
       )):<></>}
 
     </div>
-    </>
+    </>:<Loading/>
   );
 };
 export default Home;
