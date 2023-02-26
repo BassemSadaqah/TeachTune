@@ -49,7 +49,7 @@ function Quiz({ classId }) {
     {
         "question": "8- Before going to sleep at night, I appreciate:",
         "options": ["The room is dark", "The bed feels comfortable", "The room is quiet",],
-        "answers": [1, 3,2]
+        "answers": [1, 3, 2]
     },
     {
         "question": "9- When I have to remember a list of items, I remember them best if I..",
@@ -58,8 +58,8 @@ function Quiz({ classId }) {
     },
     {
         "question": "9- Which restaurant sounds the worst to you?",
-        "options": ["One with music too loud","One with lights too bright", "One with uncomfortable chairs"],
-        "answers": [2,1, 3]
+        "options": ["One with music too loud", "One with lights too bright", "One with uncomfortable chairs"],
+        "answers": [2, 1, 3]
     }
 
     ]

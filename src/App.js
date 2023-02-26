@@ -16,6 +16,7 @@ import VisualLearning from './pages/VisualLearning';
 import AuditoryLearning from './pages/AuditoryLearning';
 import KintethicLearning from './pages/KintethicLearning';
 import LearningApproaches from './pages/LearningApproaches';
+import ThinkingMethods from './pages/ThinkingMethods';
 
 
 function App() {
@@ -51,10 +52,11 @@ function App() {
           <Route path="login" element={<Signin user={user}/>} />
           <Route path="register" element={<Signup user={user} />} />
           <Route path="class" element={<Class />} />
-          <Route path="learning-approaches" element={<LearningApproaches />} />
-          <Route path="visual-learning" element={<VisualLearning />} />
-          <Route path="auditory-learning" element={<AuditoryLearning />} />
-          <Route path="kintethic-learning" element={<KintethicLearning />} />
+          <Route path="learning-approaches" element={<ProtectedRoute ><LearningApproaches /></ProtectedRoute>} />
+          <Route path="thinking-methods" element={<ProtectedRoute ><ThinkingMethods /></ProtectedRoute>} />
+          <Route path="visual-learning" element={<ProtectedRoute ><VisualLearning /></ProtectedRoute>} />
+          <Route path="auditory-learning" element={<ProtectedRoute ><AuditoryLearning /></ProtectedRoute>} />
+          <Route path="kintethic-learning" element={<ProtectedRoute ><KintethicLearning /></ProtectedRoute>} />
           <Route path="survey/*" element={<Survey />} />
           <Route path="*" element={<NotFound />} />
         </Route>

@@ -11,6 +11,7 @@ function KintethicLearning() {
                   width: '95%',
                   margin: '10px auto'
               }}
+              headStyle={{ fontSize: '1.5em' }}
             //   headStyle={{ textAlign: 'center' }}
               title="Kintethic Learning Approach"
           >
