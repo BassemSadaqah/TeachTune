@@ -46,25 +46,21 @@ function LeftMenu({ mode }){
             icon: <AlertOutlined />,
             children: [
                 {
-                    label: 'Age 3-6',
-                    key: 'age1',
+                    label: 'Childs',
+                    key: 'childs',
+                    onClick: () => navigate('/thinking-methods'),
                 },
                 {
-                    label: 'Age 7-9',
-                    key: 'age2',
+                    label: 'Teenagers',
+                    key: 'teenagers',
+                    onClick: () => navigate('/thinking-methods'),
                 },
                 {
-                    label: 'Age 10-13',
-                    key: 'age3',
-                },
-                {
-                    label: 'Age 14-16',
-                    key: 'age4',
-                },
-                {
-                    label: 'Age 17-20',
-                    key: 'age5',
-                },
+                    label: 'Adults',
+                    key: 'adults',
+                    onClick: () =>  navigate('/thinking-methods'),
+
+                }
             ]
             // disabled: true,
         },
