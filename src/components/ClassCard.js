@@ -31,10 +31,11 @@ const ClassCard = ({className,subject,room,docId}) => {
         <Meta
             avatar={<Avatar src="https://joesch.moe/api/v1/random" />}
             title={className}
-                description={<><strong>Subject: </strong>{subject}
-                <div>
+                description={<><strong>{subject}</strong>
+                {/* <span style={{float:'right'}}>Room: 101</span> */}
+                {/* <div>
                 <Tag style={{float:'right'}} color="success">Visual</Tag>
-                </div>
+                </div> */}
                  </>}
         />
     </Card>

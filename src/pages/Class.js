@@ -7,6 +7,8 @@ import Navbar from '../components/Navbar';
 import { collection, getDocs, query,getDoc, addDoc, setDoc, doc, where } from "firebase/firestore";
 import { db } from '../firebase';
 import Loading from './Loading';
+import { QRCodeSVG } from 'qrcode.react';
+
 function Class() {
   const navigate = useNavigate()
   const { state } = useLocation();
@@ -104,6 +106,10 @@ function Class() {
                 <Statistic title="Best Learning method" value={surveyData.length ? (learningMethod.method + ' (' + learningMethod.percentage + '%)') :'No Enough Data'} />
               </Col>
             </Row>
+            <hr style={{ borderColor:'rgba(0,0,0,0.1)'}}/>
+            <div style={{ marginTop: '30px',marginBottom:'-20px',textAlign:'center'}}>
+              <QRCodeSVG value={`${document.location.protocol}//${document.location.host}/survey/${state.classId}`} />,
+            </div>
             <Button style={{ margin: '0 auto', display: 'block', marginTop: '40px' }} onClick={handleCopySurveryLink} type="primary" icon={<CopyOutlined />}>Copy Survey Link</Button>
           </Card>
           <Card
