@@ -15,6 +15,7 @@ import Survey from './pages/Survey';
 import VisualLearning from './pages/VisualLearning';
 import AuditoryLearning from './pages/AuditoryLearning';
 import KintethicLearning from './pages/KintethicLearning';
+import LearningApproaches from './pages/LearningApproaches';
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
           <Route path="login" element={<Signin user={user}/>} />
           <Route path="register" element={<Signup user={user} />} />
           <Route path="class" element={<Class />} />
+          <Route path="learning-approaches" element={<LearningApproaches />} />
           <Route path="visual-learning" element={<VisualLearning />} />
           <Route path="auditory-learning" element={<AuditoryLearning />} />
           <Route path="kintethic-learning" element={<KintethicLearning />} />

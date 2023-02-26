@@ -18,6 +18,11 @@ function LeftMenu({ mode }){
             icon: < FundProjectionScreenOutlined  />,
             children: [
             {
+                label: 'Overview',
+                onClick: () => navigate('/learning-approaches'),
+                key: 'learning-approaches',
+            },
+            {
                 label: 'Visual Learning',
                 onClick:()=>navigate('/visual-learning'),
                 key: 'visual-learning',
