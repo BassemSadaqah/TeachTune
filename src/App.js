@@ -17,22 +17,16 @@ import Survey from './pages/Survey';
 function App() {
   
   const [user, setUser] = useState(null);
-  // const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user)
-        // User is signed in, see docs for a list of available properties
-        // https://firebase.google.com/docs/reference/js/firebase.User
         console.log(user)
         const uid = user.uid;
-        // ...
-        console.log("uid", uid)
       } else {
         setUser(false)
         // User is signed out
-        // ...
         console.log("user is logged out")
       }
     });
@@ -50,7 +44,6 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<ProtectedRoute ><Home /></ProtectedRoute>} />
-          {/* <Route index element={<ProtectedRoute ><Class /></ProtectedRoute>} /> */}
           <Route path="login" element={<Signin user={user}/>} />
           <Route path="register" element={<Signup user={user} />} />
           <Route path="class" element={<Class />} />
