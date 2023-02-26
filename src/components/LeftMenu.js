@@ -1,18 +1,43 @@
 import React from "react";
 import { Menu } from "antd";
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
+import { HomeOutlined, AlertOutlined , MailOutlined, SettingOutlined } from '@ant-design/icons';
+import { useNavigate } from "react-router-dom";
 
-const LeftMenu = ({ mode }) => {
+function LeftMenu({ mode }){
+    const navigate=useNavigate()
     const items = [
         {
             label: ' Home',
             key: 'home',
-            icon: <MailOutlined />,
+            icon: < HomeOutlined  />,
+            onClick:()=>{navigate('/')}
         },
         {
-            label: 'Navigation Two',
+            label: 'Thinking Methods',
             key: 'app',
-            icon: <AppstoreOutlined />,
+            icon: <AlertOutlined />,
+            children: [
+            {
+                label: 'Age 3-6',
+                key: 'age1',
+            },
+            {
+                label: 'Age 7-9',
+                key: 'age2',
+            },
+            {
+                label: 'Age 10-13',
+                key: 'age3',
+            },
+            {
+                label: 'Age 14-16',
+                key: 'age4',
+            },
+            {
+                label: 'Age 17-20',
+                key: 'age5',
+            },
+            ]
             // disabled: true,
         },
         {
@@ -25,13 +50,9 @@ const LeftMenu = ({ mode }) => {
         },
     ];
     return (
+        <>
         <Menu mode={mode} items={items}/>
-        // <Menu mode={mode}>
-        //     <Menu.Item key="explore">Explore</Menu.Item>
-        //     <Menu.Item key="features">Features</Menu.Item>
-        //     <Menu.Item key="about">About Us</Menu.Item>
-        //     <Menu.Item key="contact">Contact Us</Menu.Item>
-        // </Menu>
+        </>
     );
 };
 

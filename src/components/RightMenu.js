@@ -29,8 +29,8 @@ const RightMenu = ({ mode}) => {
             children: [
 
                 {
-                    label: 'Projects',
-                    key: 'projects',
+                    label: 'Settings',
+                    key: 'settings',
                     icon: <CodeOutlined />,
                 },
                 {

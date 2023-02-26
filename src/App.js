@@ -10,6 +10,8 @@ import { auth } from './firebase';
 import Loading from './pages/Loading';
 import ProtectedRoute from './components/ProtectedRoute';
 import { userContext } from './userContext';
+import Class from './pages/Class';
+import Survey from './pages/Survey';
 
 
 function App() {
@@ -48,8 +50,11 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<ProtectedRoute ><Home /></ProtectedRoute>} />
+          {/* <Route index element={<ProtectedRoute ><Class /></ProtectedRoute>} /> */}
           <Route path="login" element={<Signin user={user}/>} />
           <Route path="register" element={<Signup user={user} />} />
+          <Route path="class" element={<Class />} />
+          <Route path="survey/*" element={<Survey />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
