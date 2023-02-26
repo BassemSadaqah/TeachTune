@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { Card, Button, Col, Row, Statistic, notification} from 'antd';
 import { CopyOutlined } from '@ant-design/icons';
@@ -11,6 +11,7 @@ function Class() {
   const navigate=useNavigate()
   const { state } = useLocation();
   const [api, contextHolder] = notification.useNotification();
+  const [surveyData,setSurveyData]=useState(false)
   const errorNotification = (head, body, placement = 'bottom') => {
     api.error({
       message: head,
@@ -37,8 +38,13 @@ function Class() {
   useEffect(()=>{
     async function getClassData(){
       // const querySnapshot = await getDocs(collection(db, "classes"), where('uid', '==', 'user.uid'));
-      // const querySnapshot = await getDocs(collection(db, "surveys"), where('classId', '==', state.classId));
-      // console.log(querySnapshot.data())
+      const querySnapshot = await getDocs(collection(db, "surveys"), where('classId', '==', state.classId));
+      let surveyData=[]
+      querySnapshot.forEach((doc) => {
+        surveyData.push(doc.data())
+        // classesArray.push({ ...doc.data(), docId: doc.id })
+      });
+      setSurveyData()
     }
     getClassData()
   },[])
