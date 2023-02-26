@@ -26,7 +26,7 @@ const Navbar = () => {
             <Layout >
                 <Layout.Header className="nav-header"> 
                     <div className="logo">
-                        <h3 className="brand-font">The Unknown Project</h3>
+                        <h3 className="brand-font" >TeachTune</h3>
                     </div>
                     <div className="navbar-menu">
                         <div className="leftMenu">
