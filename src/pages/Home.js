@@ -5,12 +5,11 @@ import AddClassCard from '../components/AddClassCard'
 import Navbar from '../components/Navbar';
 import './styles/Home.css'
 import { db } from '../firebase';
-import { collection, getDocs, addDoc,where } from "firebase/firestore";
+import { collection, getDocs, addDoc, where, query } from "firebase/firestore";
 import { async } from '@firebase/util';
 import { userContext } from '../userContext';
 import { render } from '@testing-library/react';
 import { Navigate } from 'react-router-dom';
-// const { Header, Content, Footer } = Layout;
 const Home = () => {
   const user=useContext(userContext)
   const [classes,setClasses]=useState(false)
@@ -18,7 +17,7 @@ const Home = () => {
 
   useEffect(()=>{
     async function getClasses(){
-    const querySnapshot = await getDocs(collection(db, "classes"),where('uid','==',user.uid));
+    const querySnapshot = await getDocs(query(collection(db, "classes"),where('uid','==',user.uid)));
     let classesArray=[]
     querySnapshot.forEach((doc) => {
       classesArray.push({...doc.data(),docId:doc.id})

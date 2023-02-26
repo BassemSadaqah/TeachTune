@@ -7,28 +7,28 @@ const data = [
         key: '1',
         name: 'John Brown',
         age: 14,
-        learningMethod: 'Visual',
+        learningApproach: 'Visual',
     },
     {
         key: '2',
         name: 'Joe Black',
         age: 15,
-        learningMethod: 'Auditory',
+        learningApproach: 'Auditory',
     },
     {
         key: '3',
         name: 'Jim Green',
         age: 15,
-        learningMethod: 'Visual',
+        learningApproach: 'Visual',
     },
     {
         key: '4',
         name: 'Jim Red',
         age: 12,
-        learningMethod: 'Visual',
+        learningApproach: 'Visual',
     },
 ];
-const ResultsTable = () => {
+const ResultsTable = ({data}) => {
     const [searchText, setSearchText] = useState('');
     const [searchedColumn, setSearchedColumn] = useState('');
     const searchInput = useRef(null);
@@ -145,18 +145,18 @@ const ResultsTable = () => {
             ...getColumnSearchProps('name'),
         },
         {
-            title: 'Age',
-            dataIndex: 'age',
-            key: 'age',
+            title: 'Email',
+            dataIndex: 'email',
+            key: 'email',
             width: '20%',
-            ...getColumnSearchProps('age'),
+            ...getColumnSearchProps('email'),
         },
         {
             title: 'Learning Method',
-            dataIndex: 'learningMethod',
-            key: 'learningMethod',
-            ...getColumnSearchProps('learningMethod'),
-            sorter: (a, b) => a.learningMethod.length - b.learningMethod.length,
+            dataIndex: 'learningApproach',
+            key: 'learningApproach',
+            ...getColumnSearchProps('learningApproach'),
+            sorter: (a, b) => a.learningApproach.length - b.learningApproach.length,
             sortDirections: ['descend', 'ascend'],
         },
     ];
