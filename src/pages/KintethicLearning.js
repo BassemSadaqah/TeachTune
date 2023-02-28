@@ -15,7 +15,7 @@ function KintethicLearning() {
         title="Kintethic Learning Approach"
       >
         <h3>TIPS FOR THE KINTETHIC LEARNER</h3>
-        <p style={{ fontSize: '1.3em', color:'#1b1d1e', color:'#1b1d1e' }}>
+        <p style={{ fontSize: '1.3em', color:'#1b1d1e'}}>
           High kinesthetic learners acquire knowledge best through manipulation – doing, touching, hands on, and writing
           techniques. Primary kinesthetic learners would benefit from finding their secondary learning mode and using
           directions for either visual or auditory in conjunction with the following hints.
