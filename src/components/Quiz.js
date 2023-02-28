@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button, Form, Input, Radio } from 'antd';
 import FormItem from 'antd/es/form/FormItem';
-import { collection, addDoc, setDoc } from "firebase/firestore";
+import { collection, addDoc } from "firebase/firestore";
 import { db } from '../firebase'
 import SurveyResult from './SurveyResult';
 
