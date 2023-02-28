@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
 import { Button, Form, Input, Radio } from 'antd';
 import FormItem from 'antd/es/form/FormItem';
-import { collection, getDoc, addDoc, setDoc, doc } from "firebase/firestore";
+import { collection, addDoc, setDoc } from "firebase/firestore";
 import { db } from '../firebase'
-import { async } from '@firebase/util';
 import SurveyResult from './SurveyResult';
-import { SendOutlined } from '@ant-design/icons';
 
 function Quiz({ classId }) {
     const [loading, setLoading] = useState(false)

@@ -3,7 +3,7 @@ import { Avatar, Modal, Card, Form, Input, Radio, Button, notification } from 'a
 import React, { useState, useContext } from 'react';
 import { userContext } from '../userContext';
 import { db } from '../firebase';
-import { collection, getDocs, addDoc, setDoc, doc } from "firebase/firestore";
+import { collection, addDoc } from "firebase/firestore";
 
 const { Meta } = Card;
 // const form = Form.useFormInstance();

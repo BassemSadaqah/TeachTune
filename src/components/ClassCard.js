@@ -1,5 +1,5 @@
-import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
-import { Avatar, Card, Tag } from 'antd';
+import { EditOutlined, EllipsisOutlined, SettingOutlined, UserOutlined } from '@ant-design/icons';
+import { Avatar, Card } from 'antd';
 import { useNavigate } from 'react-router-dom';
 const { Meta } = Card;
 
@@ -29,7 +29,8 @@ const ClassCard = ({className,subject,room,docId}) => {
         ]}
     >
         <Meta
-            avatar={<Avatar src="https://joesch.moe/api/v1/random" />}
+            avatar={<Avatar icon={< UserOutlined />} />}
+            // avatar={<Avatar src="https://joesch.moe/api/v1/random" />}
             title={className}
                 description={<><strong>{subject}</strong>
                 {/* <span style={{float:'right'}}>Room: 101</span> */}

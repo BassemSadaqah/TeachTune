@@ -1,10 +1,9 @@
 import React,{useState} from 'react'
-// import { Button, Checkbox, Form, Input } from 'antd';
 import './styles/SignupForm.css'
 import { LockOutlined, UserOutlined, EyeTwoTone, EyeInvisibleOutlined, MailOutlined } from '@ant-design/icons';
-import { Button, Checkbox, Form, Input, notification } from 'antd';
-import { Link, NavLink, useNavigate } from "react-router-dom";
-import { createUserWithEmailAndPassword, updateProfile,getAuth } from 'firebase/auth';
+import { Button, Form, Input, notification } from 'antd';
+import { Link, useNavigate } from "react-router-dom";
+import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import { auth } from '../firebase';
 
 function SignupForm() {

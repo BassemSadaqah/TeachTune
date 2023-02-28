@@ -4,7 +4,7 @@ import { Card, Button, Col, Row, Statistic, notification } from 'antd';
 import { CopyOutlined } from '@ant-design/icons';
 import ResultsTable from '../components/ResultsTable'
 import Navbar from '../components/Navbar';
-import { collection, getDocs, query,getDoc, addDoc, setDoc, doc, where } from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from '../firebase';
 import Loading from './Loading';
 import { QRCodeSVG } from 'qrcode.react';

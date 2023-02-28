@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import { collection, getDocs, getDoc, addDoc, setDoc, doc } from "firebase/firestore";
+import {  getDoc, doc } from "firebase/firestore";
 import { db } from '../firebase';
 import {Card} from 'antd'
 import Quiz from '../components/Quiz';

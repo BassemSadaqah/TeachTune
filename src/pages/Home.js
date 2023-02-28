@@ -1,15 +1,11 @@
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import React,{useEffect,useState,useContext} from 'react';
 import ClassCard from '../components/ClassCard';
 import AddClassCard from '../components/AddClassCard'
 import Navbar from '../components/Navbar';
 import './styles/Home.css'
 import { db } from '../firebase';
-import { collection, getDocs, addDoc, where, query } from "firebase/firestore";
-import { async } from '@firebase/util';
+import { collection, getDocs, where, query } from "firebase/firestore";
 import { userContext } from '../userContext';
-import { render } from '@testing-library/react';
-import { Navigate } from 'react-router-dom';
 import Loading from './Loading';
 const Home = () => {
   const user=useContext(userContext)

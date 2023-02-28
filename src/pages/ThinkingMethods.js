@@ -14,7 +14,7 @@ function ThinkingMethods() {
                 //   headStyle={{ textAlign: 'center' }}
                 title="Thinking Methods"
             >
-                <p>eee</p>
+                <p>...</p>
             </Card>
         </>)
 }

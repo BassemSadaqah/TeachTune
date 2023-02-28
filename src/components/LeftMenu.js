@@ -1,6 +1,6 @@
 import React from "react";
 import { Menu } from "antd";
-import { HomeOutlined,FundProjectionScreenOutlined, AlertOutlined , MailOutlined, SettingOutlined } from '@ant-design/icons';
+import { HomeOutlined,FundProjectionScreenOutlined, AlertOutlined } from '@ant-design/icons';
 import { useNavigate } from "react-router-dom";
 
 function LeftMenu({ mode }){

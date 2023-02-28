@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 // import { Button, Checkbox, Form, Input } from 'antd';
 import './styles/LoginForm.css'
-import { LockOutlined, UserOutlined, MailOutlined } from '@ant-design/icons';
+import { LockOutlined, MailOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input, notification } from 'antd';
 import { Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase';
-import { NavLink, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 function LoginForm() {
     const navigate = useNavigate();
