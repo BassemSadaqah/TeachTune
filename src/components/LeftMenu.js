@@ -33,7 +33,7 @@ function LeftMenu({ mode }){
                 key: 'auditory-learning',
             },
             {
-                label: 'Kintethic Learning',
+                label: 'Kinesthetic Learning',
                 onClick: () => navigate('/kinesthetic-learning'),
                 key: 'kinesthetic-learning',
             },

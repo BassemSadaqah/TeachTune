@@ -10,7 +10,7 @@ function Quiz({ classId }) {
     const [submitted, setSubmitted] = useState(false)
     const allQuestions = [{
         "question": "1- What learning style would YOU say you have?",
-        "options": ["Visual", "Auditory", "Kintethic"],
+        "options": ["Visual", "Auditory", "Kinesthetic"],
         "answers": [1, 2, 3]
     },
     {

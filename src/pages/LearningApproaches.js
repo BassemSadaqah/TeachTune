@@ -51,7 +51,7 @@ function LearningApproaches() {
         <hr />
         <Link to="/kinesthetic-learning" >
           <h3>
-            3. Kintethic Learning
+            3. Kinesthetic Learning
           </h3>
         </Link>
         <p style={{ fontSize: '1.3em', color:'#1b1d1e' }}>
