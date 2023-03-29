@@ -14,10 +14,10 @@ import Class from './pages/Class';
 import Survey from './pages/Survey';
 import VisualLearning from './pages/VisualLearning';
 import AuditoryLearning from './pages/AuditoryLearning';
-import KintethicLearning from './pages/KintethicLearning';
+import KinestheticLearning from './pages/KinestheticLearning';
 import LearningApproaches from './pages/LearningApproaches';
 import ThinkingMethods from './pages/ThinkingMethods';
-
+import Footer from './components/Footer';
 
 function App() {
   
@@ -41,10 +41,11 @@ function App() {
 
 
   return (
-    <>
+    <div className='app'>
     {user===null?
     <Loading/>:
     <userContext.Provider value={user}>
+      <div className='content'>
     <BrowserRouter>
       <Routes>
         <Route path="/">
@@ -56,14 +57,17 @@ function App() {
           <Route path="thinking-methods" element={<ProtectedRoute ><ThinkingMethods /></ProtectedRoute>} />
           <Route path="visual-learning" element={<ProtectedRoute ><VisualLearning /></ProtectedRoute>} />
           <Route path="auditory-learning" element={<ProtectedRoute ><AuditoryLearning /></ProtectedRoute>} />
-          <Route path="kintethic-learning" element={<ProtectedRoute ><KintethicLearning /></ProtectedRoute>} />
+          <Route path="kinesthetic-learning" element={<ProtectedRoute ><KinestheticLearning /></ProtectedRoute>} />
           <Route path="survey/*" element={<Survey />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
-    </userContext.Provider>}
-    </>
+    </div>
+      <Footer />
+    </userContext.Provider>
+    }
+    </div>
 
   );
 }
