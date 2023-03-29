@@ -1,0 +1,31 @@
+.visual-container{
+    max-width: 1000px;
+    width: 95%;
+    margin: 10px auto;
+    margin-top: 35px;
+}
+.visual-title{
+    text-align: center;
+    margin: 0;
+}
+.visual-subtitle{
+    text-align: center;
+    font-weight: bold;
+    color: #8b8b8b;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+.visual-head-img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 450px;
+    margin-bottom: 10px;
+}
+
+.visual-paragraph{
+    font-size: large;
+    line-height: 25px;
+    color: #1b1d1e;
+    margin-top: 0;
+    text-align: justify;
+}

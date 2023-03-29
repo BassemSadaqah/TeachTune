@@ -1,0 +1,43 @@
+.kinesthetic-container{
+    max-width: 1000px;
+    width: 95%;
+    margin: 10px auto;
+    margin-top: 35px;
+}
+.kinesthetic-title{
+    text-align: center;
+    margin: 0;
+}
+.kinesthetic-subtitle{
+    text-align: center;
+    font-weight: bold;
+    color: #8b8b8b;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+.kinesthetic-head-img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 450px;
+    margin-bottom: 10px;
+}
+.kinesthetic-container a{
+    text-decoration: none;
+}
+.kinesthetic-advantages-list{
+    margin-top: 0;
+}
+
+.kinesthetic-advantages-item{
+    font-size: large;
+    line-height: 25px;
+    margin-bottom:5px ;
+    text-align: justify;
+}
+.kinesthetic-paragraph {
+    font-size: large;
+    line-height: 25px;
+    /* color: #1b1d1e; */
+    margin-top: 0;
+    text-align: justify;
+}

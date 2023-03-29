@@ -1,0 +1,46 @@
+.auditory-container{
+    max-width: 1000px;
+    width: 95%;
+    margin: 10px auto;
+    margin-top: 35px;
+}
+.auditory-title{
+    text-align: center;
+    margin: 0;
+}
+.auditory-subtitle{
+    text-align: center;
+    font-weight: bold;
+    color: #8b8b8b;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+.auditory-head-img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 450px;
+    margin-bottom: 10px;
+}
+.auditory-container a{
+    text-decoration: none;
+}
+.auditory-strategies-list{
+    margin-top: 0;
+}
+.auditory-strategies-list p{
+    font-size: large;
+    line-height: 25px;
+}
+.auditory-strategies-item{
+    font-size: large;
+    line-height: 25px;
+    margin-bottom:5px ;
+    text-align: justify;
+}
+.auditory-paragraph {
+    font-size: large;
+    line-height: 25px;
+    /* color: #1b1d1e; */
+    margin-top: 0;
+    text-align: justify;
+}

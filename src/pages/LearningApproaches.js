@@ -49,7 +49,7 @@ function LearningApproaches() {
           <strong>How to cater to auditory learners:</strong> Since these students generally find it hard to stay quiet for long periods of time, get your auditory learners involved in the lecture by asking them to repeat new concepts back to you. Ask questions and let them answer. Invoke group discussions so your auditory and verbal processors can properly take in and understand the information they’re being presented with. Watching videos and using music or audiotapes are also helpful ways of learning for this group.
         </p>
         <hr />
-        <Link to="/kintethic-learning" >
+        <Link to="/kinesthetic-learning" >
           <h3>
             3. Kintethic Learning
           </h3>
