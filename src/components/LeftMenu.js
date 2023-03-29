@@ -34,8 +34,8 @@ function LeftMenu({ mode }){
             },
             {
                 label: 'Kintethic Learning',
-                onClick: () => navigate('/kintethic-learning'),
-                key: 'kintethic-learning',
+                onClick: () => navigate('/kinesthetic-learning'),
+                key: 'kinesthetic-learning',
             },
             ]
             // disabled: true,
