@@ -8,6 +8,15 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from '../firebase';
 import Loading from './Loading';
 import { QRCodeSVG } from 'qrcode.react';
+import {Link} from 'react-router-dom';
+
+
+function learningMethodFormatter(value){
+  value = value.replace('Kinaesthetic', 'Kinesthetic')
+  return(
+    <Link to={'/' + value.split(' ')[0].toLowerCase() +'-learning'}>{value}</Link>
+  ) 
+}
 
 function Class() {
   const navigate = useNavigate()
@@ -103,7 +112,7 @@ function Class() {
                 <Statistic title="Registered Students" value={surveyData.length} />
               </Col>
               <Col span={12}>
-                <Statistic title="Best Learning method" value={surveyData.length ? (learningMethod.method + ' (' + learningMethod.percentage + '%)') :'No Enough Data'} />
+                <Statistic title="Best Learning method" formatter={learningMethodFormatter} value={surveyData.length ? (learningMethod.method + ' (' + learningMethod.percentage + '%)') :'No Enough Data'} />
               </Col>
             </Row>
             <hr style={{ borderColor:'rgba(0,0,0,0.1)'}}/>
