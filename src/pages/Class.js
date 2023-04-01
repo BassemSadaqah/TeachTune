@@ -13,9 +13,14 @@ import {Link} from 'react-router-dom';
 
 function learningMethodFormatter(value){
   value = value.replace('Kinaesthetic', 'Kinesthetic')
+  if(value=='No Enough Data'){
+    return(
+      <>{value}</>
+    )
+  }else{
   return(
     <Link to={'/' + value.split(' ')[0].toLowerCase() +'-learning'}>{value}</Link>
-  ) 
+  )}
 }
 
 function Class() {
